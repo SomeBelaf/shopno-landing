@@ -30,6 +30,7 @@ function showSlidesMain(n) {
     dots[itemIndexMain - 1].className += " active";   // активируем точку
 
 }
+
 /*СЛАЙДЕР what they says*/
 let itemIndexWts = 1;
 
@@ -71,11 +72,6 @@ function showSlidesWts(n) {
 
 }
 
-
-
-
-
-
 /*ДЛЯ SERVICES*/
 
 const first = document.querySelector('.some-row__item--first');
@@ -115,7 +111,6 @@ knowMore.forEach((item) => {
     });
 });
 
-
 /*ЗАКРЫТИЕ POPUP*/
 close.forEach((item) => {
     item.addEventListener('click', () => {
@@ -142,9 +137,7 @@ close.forEach((item) => {
     });
 });
 
-
-
-SIDE - BAR
+/*SIDE - BAR*/
 function openNav() {
     if (document.documentElement.clientWidth <= 576) {
         document.getElementById("sideBar").style.width = "100%";
