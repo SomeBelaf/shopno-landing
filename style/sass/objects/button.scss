@@ -1,0 +1,20 @@
+.button{
+    width: 23.5rem;
+    height: 5.4rem;
+    background: none;
+    border: 2px solid $color_button;
+    border-radius: 3px;
+    font-family: $Montserrat_font;
+    font-weight: 400;
+    color: $color_button;
+    font-size: 1.8rem;
+    text-align: center;
+    cursor: pointer;
+};
+
+.button:hover{
+    transition: .5s;
+    background-color: #6eeee4;
+    border: #6eeee4;
+    color: #2e6b66;
+}

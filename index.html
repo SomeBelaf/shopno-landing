@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700|Montserrat:400,700|Raleway:400,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <title>SHOPNO</title>
+</head>
+<body>
+
+
+    <div class="side-bar" id="sideBar">
+        <div class="side-bar__wrapper">
+            <a class="closebtn" onclick="closeNav()">&times;</a>
+            <ul class="side-bar__list">
+                <a data-scroll href="#aboutUs"><li class="side-bar__item title--black">ABOUT US</li></a>
+                <a data-scroll href="#ourWorks"><li class="side-bar__item title--black">featured works</li></a>
+                <a data-scroll href="#services"><li class="side-bar__item title--black">our services</li></a>
+                <a data-scroll href="#team"><li class="side-bar__item title--black">small team</li></a>
+                <a data-scroll href="#wts"><li class="side-bar__item title--black">what they</li></a>
+                <a data-scroll href="#sponsors"><li class="side-bar__item title--black">our sponsors</li></a>
+                <a data-scroll href="#footer"><li class="side-bar__item title--black">Our contacts</li></a>
+            </ul>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__content header-content">
+                <a href="#"><img src="assets/images/logo.png" alt="Shopno" class="header__logo logo"></a>
+                <div class="nav-bar" onclick="openNav()">
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="info" id="info">
+        <div class="container">
+            <div class="info__content">
+                <div class="info-title animated fadeInDown">
+                    <h1 class="info-title__text">Say Hello to <span class="info-title__text--aqua">SHOPNO!</span><br><span class="info-title__text--aqua">Agency</span> CORPORATE SHOPNO Theme</h1>
+                </div>
+                <button class="info__button button">CONTACT US</button>
+                <div class="info__bg-cup">
+                    <img src="assets/images/cup.png" alt="" class="bg-cup">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-us" id="aboutUs">
+        <div class="container">
+            <div class="about-us__title some-title">
+                <h2 class="main-title">ABOUT US</h2>
+                <p class="sup-title">Lorem ipsum dolor sit amet event landing template</p>
+            </div>
+            <div class="about-us__slider slider">
+                <div class="slider__wrapper wow fadeInLeft">
+                    <!--СЛАЙДЕР-->
+                    <div class="main-slider">
+                        <div class="main-slider__item slider-item animated fadeIn">
+                            <img src="assets/images/slider-img.jpg" alt="Первый слайд" class="slider-item__img">
+                        </div>
+                    
+                        <div class="main-slider__item slider-item animated fadeIn">
+                            <img src="assets/images/void-img.jpg" alt="Второй слайд" class="slider-item__img">
+                        </div>
+                    
+                        <div class="main-slider__item slider-item animated fadeIn">
+                            <img src="assets/images/void-img.jpg" alt="Третий слайд" class="slider-item__img">
+                        </div>
+
+                        <div class="main-slider__item slider-item animated fadeIn">
+                            <img src="assets/images/void-img.jpg" alt="Червёртый слайд" class="slider-item__img">
+                        </div>
+                    </div>
+                    
+                    <div class="main-slider-dots--center">
+                        <span class="main-slider-dots__item main-slider-dots__item--main" onclick="currentSlideMain(1)"></span> 
+                        <span class="main-slider-dots__item main-slider-dots__item--main" onclick="currentSlideMain(2)"></span> 
+                        <span class="main-slider-dots__item main-slider-dots__item--main" onclick="currentSlideMain(3)"></span> 
+                        <span class="main-slider-dots__item main-slider-dots__item--main" onclick="currentSlideMain(4)"></span> 
+                    </div>
+                    <!--СЛАЙДЕР-->
+
+                </div>
+                <div class="slider__text some-text">
+                    <div class="some-text--upper">
+                        <h1 class="title--black">We Actually Do amazing works</h1>
+                        <p class="text--black">A visual approach is an approach to a runway at an airport 
+                            conducted under instrument flight rules. The pilot must at all times have either the airport or the preceding aircraft in approach correct sight. conducted under instrument flight rules. The pilot must at all times.</p>
+                        <br>
+                        <p class="text--black">Preceding aircraft in approach correct sight. conducted under instrument flight rules.</p>
+                    </div>
+                    <div class="some-text">
+                        <h1 class="title--black">why we are the great?</h1>
+                        <p class="text--black">A visual approach is an approach to a runway at an airport 
+                            conducted under instrument flight rules.
+                            The preceding aircraft in approach correct sight.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="our-works" id="ourWorks">
+        <div class="container">
+            <div class="our-works__title some-title">
+                <h2 class="main-title">featured works</h2>
+                <p class="sup-title">Lorem ipsum dolor sit amet event landing template</p>
+            </div>
+
+            <div class="our-works__tile some-img">
+                <div class="some-img__item wow flipInX">
+                    <img src="assets/images/portfolio_1.jpg" alt="" class="our-works__img">
+                </div>
+                <div class="some-img__item wow flipInX">
+                    <img src="assets/images/portfolio_2.jpg" alt="" class="our-works__img">
+                </div>
+                <div class="some-img__item wow flipInX">
+                    <img src="assets/images/portfolio_3.jpg" alt="" class="our-works__img">
+                </div>
+                <div class="some-img__item wow flipInX">
+                    <img src="assets/images/portfolio_4.jpg" alt="" class="our-works__img">
+                </div>
+                <div class="some-img__item wow flipInX">
+                    <img src="assets/images/portfolio_5.jpg" alt="" class="our-works__img">
+                </div>
+                <div class="some-img__item wow flipInX">
+                    <img src="assets/images/portfolio_6.jpg" alt="" class="our-works__img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <div class="services__title some-title">
+                <h2 class="main-title">our services</h2>
+                <p class="sup-title">Lorem ipsum dolor sit amet event landing template</p>
+            </div>
+
+            <div class="services__advantages advantages">
+                <div class="advantages__row some-row">
+                    <div class="some-row__item some-row__item--first some-row__item--big wow fadeInLeft">
+                        <div class="advantages__text">
+                            <div class="some-text">
+                                <h1 class="title--white">Designing is The CooL LOVE FOR.</h1>
+                                <p class="some-text--restriction text--white">Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle...</p>
+                            </div>
+                            <div class="some-row__know-more more" id='know-more'>
+                                <h3 class="know-more__text more__text">Know more</h3>
+                                <img src="assets/images/arrow.png" alt="" class="more__img">
+                            </div>
+                        </div>
+                        <div class="popup">
+                            <div class="some-text some-text--popup">
+                                <h1 class="title--black">Designing is The CooL LOVE FOR.</h1>
+                                <p class="text--black">Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates. You may even catch the client while they’re still online.</p>
+                            </div>
+                            <div class="popup-close">
+                                <img src="assets/images/close.png" class="close" id="close">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="some-row__item some-row__item--second some-row__item--small wow fadeInRight">
+                        <div class="advantages__text">
+                            <div class="some-text">
+                                <h1 class="title--white">Cool psd Design</h1>
+                                <p class="some-text--restriction text--white">Our most popular service is our we know that sometimes it’s something and you middle most..</p>
+                            </div>
+                            <div class="some-row__know-more more" id='know-more'>
+                                <h3 class="know-more__text more__text">Know more</h3>
+                                <img src="assets/images/arrow.png" alt="" class="more__img">
+                            </div>
+                        </div>
+                        <div class="popup">
+                            <div class="some-text some-text--popup">
+                                <h1 class="title--black">Cool psd Design</h1>
+                                <p class="text--black">Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you.</p>
+                            </div>
+                            <div class="popup-close">
+                                <img src="assets/images/close.png" class="close" id="close">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="advantages__row some-row">
+                    <div class="some-row__item some-row__item--third some-row__item--big wow fadeInLeft">
+                        <div class="advantages__text">
+                            <div class="some-text">
+                                <h1 class="title--white">Designing is The Cool</h1>
+                                <p class="some-text--restriction text--white">Our most popular service is our Virtual Receptionist. We know that ...</p>
+                            </div>
+                            <div class="some-row__know-more more" id='know-more'>
+                                <h3 class="know-more__text more__text">Know more</h3>
+                                <img src="assets/images/arrow.png" alt="" class="more__img">
+                            </div>
+                        </div>   
+                        <div class="popup">
+                            <div class="some-text some-text--popup">
+                                <h1 class="title--black">Designing is The Cool</h1>
+                                <p class="text--black">Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates. You may even catch the client while they’re still online.</p>
+                            </div>
+                            <div class="popup-close">
+                                <img src="assets/images/close.png" class="close" id="close">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="some-row__item some-row__item--fourth some-row__item--small wow fadeInRight">
+                        <div class="advantages__text">
+                            <div class="some-text">
+                                <h1 class="title--white">PSD TO HTML KORI</h1>
+                                <p class="some-text--restriction text--white">We know that sometimes it’s something and you middle most..</p>
+                            </div>
+                            <div class="some-row__know-more more" id='know-more'>
+                                <h3 class="know-more__text more__text">Know more</h3>
+                                <img src="assets/images/arrow.png" alt="" class="more__img">
+                            </div>
+                        </div>
+                        <div class="popup">
+                            <div class="some-text some-text--popup">
+                                <h1 class="title--black">PSD TO HTML KORI</h1>
+                                <p class="text--black">Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you.</p>
+                            </div>
+                            <div class="popup-close">
+                                <img src="assets/images/close.png" class="close" id="close">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="advantages__row some-row">
+                    <div class="some-row__item some-row__item--fifth some-row__item--small wow fadeInLeft">
+                        <div class="advantages__text">
+                            <div class="some-text">
+                                <h1 class="title--white">cool psd Design</h1>
+                                <p class="some-text--restriction text--white">Our most popular service is our new virtual Receptionist you middle most..</p>
+                            </div>
+                            <div class="some-row__know-more more" id='know-more'>
+                                <h3 class="know-more__text more__text">Know more</h3>
+                                <img src="assets/images/arrow.png" alt="" class="more__img">
+                            </div>
+                        </div>
+                        <div class="popup">
+                            <div class="some-text some-text--popup">
+                                <h1 class="title--black">cool psd Design</h1>
+                                <p class="text--black">Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you.</p>
+                            </div>
+                            <div class="popup-close">
+                                <img src="assets/images/close.png" class="close" id="close">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="some-row__item some-row__item--sixth some-row__item--big wow fadeInRight">
+                        <div class="advantages__text">
+                            <div class="some-text">
+                                <h1 class="title--white">Designing is The Cool FOR</h1>
+                                <p class="some-text--restriction text--white">Our most popular service is our Virtual Receptionist...</p>
+                            </div>
+                            <div class="some-row__know-more more" id='know-more'>
+                                <h3 class="know-more__text more__text">Know more</h3>
+                                <img src="assets/images/arrow.png" alt="" class="more__img">
+                            </div>
+                        </div>                        
+                        <div class="popup">
+                            <div class="some-text some-text--popup">
+                                <h1 class="title--black">Designing is The Cool FOR</h1>
+                                <p class="text--black">Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates. You may even catch the client while they’re still online.</p>
+                            </div>
+                            <div class="popup-close">
+                                <img src="assets/images/close.png" class="close" id="close">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="team" id="team">
+        <div class="container">
+            <div class="team__title some-title">
+                <h2 class="main-title">small team</h2>
+                <p class="sup-title">Lorem ipsum dolor sit amet event landing template</p>
+            </div>
+
+            <div class="team__tile some-img">
+                <div class="some-img__item">
+                    <div class="item-img--tall">
+                        <img src="assets/images/team_1.jpg" alt="" class="team__img">
+                        <div class="team-info">
+                            <div class="team-info__text some-text">
+                                <div class="some-text--wrapper">
+                                    <h1 class="title--team">AL RAYHAN <span class="title--modified">/ UI Designer</span></h1>
+                                    <p class="text--team">Lorem Ipsum is not simply is  an action designer random text <br>It has roots in a piece. </p>
+                                    <div class = "team-info__social social">
+                                        <img src="assets/icons/faceboock.png" alt="" class="icon-social">
+                                        <img src="assets/icons/twitter.png" alt="" class="icon-social">
+                                        <img src="assets/icons/ball.png" alt="" class="icon-social">
+                                        <img src="assets/icons/mail.png" alt="" class="icon-social">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="some-img__item">
+                    <div class="item-img--tall">
+                        <img src="assets/images/team_2.jpg" alt="" class="team__img">
+                        <div class="team-info">
+                            <div class="team-info__text some-text">
+                                <div class="some-text--wrapper">
+                                    <h1 class="title--team">AL RAYHAN <span class="title--modified">/ UI Designer</span></h1>
+                                    <p class="text--team">Lorem Ipsum is not simply is  an action designer random text <br>It has roots in a piece. </p>
+                                    <div class = "team-info__social social">
+                                        <img src="assets/icons/faceboock.png" alt="" class="icon-social">
+                                        <img src="assets/icons/twitter.png" alt="" class="icon-social">
+                                        <img src="assets/icons/ball.png" alt="" class="icon-social">
+                                        <img src="assets/icons/mail.png" alt="" class="icon-social">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="some-img__item">
+                    <div class="item-img--tall">
+                        <img src="assets/images/team_3.jpg" alt="" class="team__img">
+                        <div class="team-info">
+                            <div class="team-info__text some-text">
+                                <div class="some-text--wrapper">
+                                    <h1 class="title--team">AL RAYHAN <span class="title--modified">/ UI Designer</span></h1>
+                                    <p class="text--team">Lorem Ipsum is not simply is  an action designer random text <br>It has roots in a piece. </p>
+                                    <div class = "team-info__social social">
+                                        <img src="assets/icons/faceboock.png" alt="" class="icon-social">
+                                        <img src="assets/icons/twitter.png" alt="" class="icon-social">
+                                        <img src="assets/icons/ball.png" alt="" class="icon-social">
+                                        <img src="assets/icons/mail.png" alt="" class="icon-social">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="some-img__item">
+                    <div class="item-img--tall">
+                        <img src="assets/images/team_4.jpg" alt="" class="team__img">
+                        <div class="team-info">
+                            <div class="team-info__text some-text">
+                                <div class="some-text--wrapper">
+                                    <h1 class="title--team">AL RAYHAN <span class="title--modified">/ UI Designer</span></h1>
+                                    <p class="text--team">Lorem Ipsum is not simply is  an action designer random text <br>It has roots in a piece. </p>
+                                    <div class = "team-info__social social">
+                                        <img src="assets/icons/faceboock.png" alt="" class="icon-social">
+                                        <img src="assets/icons/twitter.png" alt="" class="icon-social">
+                                        <img src="assets/icons/ball.png" alt="" class="icon-social">
+                                        <img src="assets/icons/mail.png" alt="" class="icon-social">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="some-img__item">
+                    <div class="item-img--tall">
+                        <img src="assets/images/team_5.jpg" alt="" class="team__img">
+                        <div class="team-info">
+                            <div class="team-info__text some-text">
+                                <div class="some-text--wrapper">
+                                    <h1 class="title--team">AL RAYHAN <span class="title--modified">/ UI Designer</span></h1>
+                                    <p class="text--team">Lorem Ipsum is not simply is  an action designer random text <br>It has roots in a piece. </p>
+                                    <div class = "team-info__social social">
+                                        <img src="assets/icons/faceboock.png" alt="" class="icon-social">
+                                        <img src="assets/icons/twitter.png" alt="" class="icon-social">
+                                        <img src="assets/icons/ball.png" alt="" class="icon-social">
+                                        <img src="assets/icons/mail.png" alt="" class="icon-social">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="some-img__item">
+                    <div class="item-img--tall">
+                        <img src="assets/images/team_1.jpg" alt="" class="team__img">
+                        <div class="team-info">
+                            <div class="team-info__text some-text">
+                                <div class="some-text--wrapper">
+                                    <h1 class="title--team">AL RAYHAN <span class="title--modified">/ UI Designer</span></h1>
+                                    <p class="text--team">Lorem Ipsum is not simply is  an action designer random text <br>It has roots in a piece. </p>
+                                    <div class = "team-info__social social">
+                                        <img src="assets/icons/faceboock.png" alt="" class="icon-social">
+                                        <img src="assets/icons/twitter.png" alt="" class="icon-social">
+                                        <img src="assets/icons/ball.png" alt="" class="icon-social">
+                                        <img src="assets/icons/mail.png" alt="" class="icon-social">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </section>
+
+    <section class="wts" id="wts">
+        <div class="container">
+            <div class="wts__title some-title">
+                <h2 class="main-title">what they says</h2>
+                <p class="sup-title">Lorem ipsum dolor sit amet event landing template</p>
+            </div>
+
+            <div class="wts-slider">
+                <!--СЛАЙДЕР-->
+                <div class="wts-slider__wrapper">
+                    <div class="wts-slider__item slider-item animated fadeIn">
+                        <div class="slider-item__wrapper">
+                            <div class="slider-img__wrapper">
+                                <img src="assets/images/team_1.jpg" alt="Первый слайд" class="slider-item__img--small">
+                            </div>
+                            <div class="slider-item__text">   
+                                <div class="some-text some-text--center">
+                                    <h1 class="title--black">AL RAYHAN <span class="title--modified">/ UI/UX DESIGNER</span></h1>
+                                    <p class="text--black">Lorem Ipsum is simply dummy text of the printing and you 
+                                        standard dummy know that text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                </div>
+                                <div class="slider-item__rating rating">
+                                    <img src="assets/icons/star.png" alt="" class="rating__img">
+                                    <img src="assets/icons/star.png" alt="" class="rating__img">
+                                    <img src="assets/icons/star.png" alt="" class="rating__img">
+                                    <img src="assets/icons/star.png" alt="" class="rating__img">
+                                    <img src="assets/icons/star.png" alt="" class="rating__img">
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wts-slider__item slider-item animated fadeIn">
+                        <div class="slider-item__wrapper">
+                            <div class="slider-img__wrapper">
+                                <img src="assets/images/team_2.jpg" alt="Первый слайд" class="slider-item__img--small">
+                            </div>
+                            <div class="slider-item__text">   
+                                <div class="some-text some-text--center">
+                                    <h1 class="title--black">AL RAYHAN <span class="title--modified">/ UI/UX DESIGNER</span></h1>
+                                    <p class="text--black">Lorem Ipsum is simply dummy text of the printing and you 
+                                        standard dummy know that text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                </div>
+                                <div class="slider-item__rating rating">
+                                    <img src="assets/icons/star.png" alt="" class="rating__img">
+                                    <img src="assets/icons/star.png" alt="" class="rating__img">
+                                    <img src="assets/icons/star.png" alt="" class="rating__img">
+                                    <img src="assets/icons/star.png" alt="" class="rating__img">
+                                    <img src="assets/icons/star.png" alt="" class="rating__img">
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wts-slider__item slider-item animated fadeIn">
+                        <div class="slider-item__wrapper">
+                            <div class="slider-img__wrapper">
+                                <img src="assets/images/team_3.jpg" alt="Первый слайд" class="slider-item__img--small">
+                            </div>
+                            <div class="slider-item__text">   
+                                <div class="some-text some-text--center">
+                                    <h1 class="title--black">AL RAYHAN <span class="title--modified">/ UI/UX DESIGNER</span></h1>
+                                    <p class="text--black">Lorem Ipsum is simply dummy text of the printing and you 
+                                        standard dummy know that text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                </div>
+                                <div class="slider-item__rating rating">
+                                    <img src="assets/icons/star.png" alt="" class="rating__img">
+                                    <img src="assets/icons/star.png" alt="" class="rating__img">
+                                    <img src="assets/icons/star.png" alt="" class="rating__img">
+                                    <img src="assets/icons/star.png" alt="" class="rating__img">
+                                    <img src="assets/icons/star.png" alt="" class="rating__img">
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wts-slider__item slider-item animated fadeIn">
+                        <div class="slider-item__wrapper">
+                            <div class="slider-img__wrapper">
+                                <img src="assets/images/team_4.jpg" alt="Первый слайд" class="slider-item__img--small">
+                            </div>
+                            <div class="slider-item__text">   
+                                <div class="some-text some-text--center">
+                                    <h1 class="title--black">AL RAYHAN <span class="title--modified">/ UI/UX DESIGNER</span></h1>
+                                    <p class="text--black">Lorem Ipsum is simply dummy text of the printing and you 
+                                        standard dummy know that text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                </div>
+                                <div class="slider-item__rating rating">
+                                    <img src="assets/icons/star.png" alt="" class="rating__img">
+                                    <img src="assets/icons/star.png" alt="" class="rating__img">
+                                    <img src="assets/icons/star.png" alt="" class="rating__img">
+                                    <img src="assets/icons/star.png" alt="" class="rating__img">
+                                    <img src="assets/icons/star.png" alt="" class="rating__img">
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__control-elements">
+                    <!-- точки -->
+                    <div class="main-slider-dots--left">
+                        <span class="main-slider-dots__item main-slider-dots__item--wts" onclick="currentSlideWts(1)"></span> 
+                        <span class="main-slider-dots__item main-slider-dots__item--wts" onclick="currentSlideWts(2)"></span> 
+                        <span class="main-slider-dots__item main-slider-dots__item--wts" onclick="currentSlideWts(3)"></span> 
+                        <span class="main-slider-dots__item main-slider-dots__item--wts" onclick="currentSlideWts(4)"></span> 
+                    </div>
+                    <!-- точки -->
+                    <!-- стрелочки -->  
+                    <div class="arrow__wrapper">
+                        <img  src="assets/icons/arrow_left.png" class="arrows arrows__prew" onclick="minusSlide()"></img>
+                        <img src="assets/icons/arrow_right.png" class="arrows arrows__next" onclick="plusSlide()"></img>
+                    </div>
+                    <!-- стрелочки -->
+                </div>
+                <!--СЛАЙДЕР-->
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="sponsors" id="sponsors">
+        <div class="container">
+            <div class="sponsors__wrapper sponsors__wrapper--indentation">
+                <a href="#" class="sponsors-link"><img src="assets/images/sponsors_1.png" class="sponsors__img"></a>
+                <a href="#" class="sponsors-link"><img src="assets/images/sponsors_2.png" class="sponsors__img"></a>
+                <a href="#" class="sponsors-link"><img src="assets/images/sponsors_3.png" class="sponsors__img"></a>
+            </div>
+            <div class="sponsors__wrapper">
+                <a href="#" class="sponsors-link"><img src="assets/images/sponsors_4.png" class="sponsors__img"></a>
+                <a href="#" class="sponsors-link"><img src="assets/images/sponsors_5.png" class="sponsors__img"></a>
+                <a href="#" class="sponsors-link"><img src="assets/images/sponsors_6.png" class="sponsors__img"></a>
+                <a href="#" class="sponsors-link"><img src="assets/images/sponsors_1.png" class="sponsors__img"></a>
+                <a href="#" class="sponsors-link"><img src="assets/images/sponsors_2.png" class="sponsors__img"></a>
+                <a href="#" class="sponsors-link"><img src="assets/images/sponsors_3.png" class="sponsors__img"></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="our-contacts">
+                <div class="footer__contact-us">
+                    <form class="contact-us" action="index.html" method="post">
+                        <input type="text" class="contact-us__text" placeholder="Name*">
+                        <input type="email" class="contact-us__text" placeholder="Subject*">
+                        <input type="text" class="contact-us__text" placeholder="E-mail*">
+                        <textarea class="contact-us__text contact-us__text--big" placeholder="Massage*"></textarea>
+                        <input type="submit" class="contact-us__btn button" value="SEND MESSAGE">
+                    </form>
+                </div>
+                <div class="adress">
+                    <ul class="adress_list-phone">
+                        <li class="list-item">Adress line 1</li>
+                        <li class="list-item">Adress line 2</li>
+                        <li class="list-item">Phone: +548 945645</li>
+                        <li class="list-item">Fax: +456456 54546</li>
+                    </ul>
+                    <ul class="adress_list-email">
+                        <li class="list-item">Web: www.designagency.net</li>
+                        <li class="list-item">E-mail: info@designagency.net</li>
+                    </ul>
+                    <div class="footer-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20312.88652366703!2d30.49906893019968!3d50.476280686637395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9bb1b5375abbc47!2sGoogle%20Ukraine!5e0!3m2!1sru!2sua!4v1583767358076!5m2!1sru!2sua" width="100%" height="225" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="follow-us">
+            <h4>FOLLOW US</h4>
+            <div class = "follow-us__social">
+                <a href="#" class="social-link"><span class="social-item"><img src="assets/icons/pinterest_big.png" alt="" class="icon-social icon-social--footer"></span></a>
+                <a href="#" class="social-link"><span class="social-item"><img src="assets/icons/twitter_big.png" alt="" class="icon-social icon-social--footer"></span></a>
+                <a href="#" class="social-link"><span class="social-item"><img src="assets/icons/facebook_big.png" alt="" class="icon-social icon-social--footer"></span></a>
+                <a href="#" class="social-link"><span class="social-item"><img src="assets/icons/ball_big.png" alt="" class="icon-social icon-social--footer"></span></a>
+            </div>
+            <p>Copyright Masum Parvej, All Rights Reserved</p>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+    <script src="smooth-scroll.polyfills.min.js"></script>
+    <script src="wow.min.js"></script>
+    <script>
+        let scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+</html>

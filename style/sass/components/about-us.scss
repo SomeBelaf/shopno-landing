@@ -1,0 +1,124 @@
+.about-us{
+    padding: 13rem 0 10rem 0;
+    background-color: $color_white_3;
+//////////////////////РОЗПОЛОЖЕНИЕ ЗАГЛАВЛЕНИЯ//////////////////////
+    &__title{
+    margin-bottom: 12rem;
+    }
+    &__slider{
+        display: flex;
+    }
+}
+//////////////////////СТИЛИ ЗАГЛАВЛЕНИЯ//////////////////////
+.some-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.main-title{
+    @include main-title;
+}
+.sup-title{
+    @include main-sub-title;
+}
+//////////////////////разделение екрана на 2//////////////////////
+.slider{
+    &__wrapper{
+        flex: 1;
+    }
+    &__text{
+        flex: 1;
+        padding-top: 2rem;
+    }
+}
+//////////////////////СТИЛИ ДЛЯ ТЕКСТА//////////////////////
+.some-text{
+    &--upper{
+        margin-bottom: 4rem;
+    }
+}
+.title--black{
+    @include title($color_tirtle_2, 2.8rem);
+}
+.text--black{
+    @include main-text($color_text);
+}
+//////////////////////////////////////////////////////////////////
+
+/* Собственно сам слайдер */
+.main-slider{
+    max-width: fit-content;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    &__item{
+        display: block;
+    }
+}
+/* Картинка мастабируется по отношению к родительскому элементу */
+.slider-item__img{
+    width: 100%;
+    height: auto;
+    border: none !important;
+    box-shadow: none !important;
+}
+/* Кружочки */
+.main-slider-dots--center{
+    text-align: center;
+}
+.main-slider-dots__item{
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: $color_slider_dots;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active,
+.main-slider-dots__item:hover {
+    background-color: $color_aqua;
+}
+
+//////////////////////АНИМАЦИЯ//////////////////////
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+//////////////////////////////////////////////////////////////////
+
+@media screen and (max-width: 920px){
+    .about-us__slider{
+        flex-direction: column;
+    }
+    .slider__text{
+        padding: 3rem 7rem 0;
+    }
+
+}
+@media screen and (max-width: 620px){
+    .about-us__slider{
+        flex-direction: column;
+    }
+    .slider__text{
+        padding: 3rem 3rem 0;
+    }
+
+}

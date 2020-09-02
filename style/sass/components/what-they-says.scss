@@ -1,0 +1,113 @@
+.wts{
+    background-color: $color_white_4;
+    padding: 12.5rem 0 12.5rem 0;
+    &__title{
+        margin-bottom: 12.5rem;
+    }
+}
+//////////////////////РАЗПОЛОЖЕНИЕ ITEM В ВИДЕ СТРОКИ//////////////////////
+.slider-item__wrapper{
+    display: flex;
+    align-items: center;
+}
+////////////////////////////////////////////
+.slider-item{
+    &__img--small{                              
+        width: 100% ;
+        height: auto;                           
+    }                        
+    &__text{                    ////////
+        display: flex;          ////////РАЗПОЛОДЕНИЕ ЕЛЕМЕНТОВ В СТОЛБИК
+        flex-direction: column; ////////РАЗПОЛОДЕНИЕ ЕЛЕМЕНТОВ В СТОЛБИК  
+        align-items: center;    ////////
+        justify-content: center;////////
+        width: 67rem;
+        height: 36rem;
+        background-color: $color_slider_bg;
+        border-radius: 3px;
+        margin: 0 auto;
+        padding: 0 8.5rem;
+    }
+    &__rating{
+        margin-top: 3.5rem;
+    }
+}
+.some-text--center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.rating{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 11rem;
+}
+
+//////////////////////ЕЛЕМЕНТЫ УПРАВЛЕНИЯ//////////////////////
+.slider__control-elements{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-slider-dots--left{
+    margin: 0 155px;
+}
+//////////////////////СТРЕЛОЧКИ//////////////////////
+.arrow__wrapper{
+    margin: 0 5rem;
+}
+.arrows{
+    width: 5.4rem;
+    height: 5.4rem;
+    background-color: $color_white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    object-fit: none;
+    &__prew{
+        margin-right: 3rem;
+    }
+}
+.arrows:hover{
+    background-color: $color_aqua;
+}
+//////////////////////////////////////////////////////////////////
+
+
+@media screen and (max-width: 1100px){
+    .slider-item__text{
+        margin: 0 auto 0 2rem;
+    }
+}
+    
+@media screen and (max-width: 950px){
+    .slider-item{
+        &__wrapper{                 ////////
+            flex-direction: column; //////// слайдер становится в колоннку
+        }                           ////////    
+        &__img--small{        ////////
+            margin-bottom: 2rem; ////////отступ для картинки
+        }                     ////////
+        &__text{
+            margin: 0;
+        }
+    }
+    .slider__control-elements{  ////////
+        justify-content: center;//////// точки по центру 
+    }                           ////////    
+    .main-slider-dots--left{
+        margin: 2rem auto 0;
+    }
+    .arrow__wrapper{    ////////    
+        display: none;  //////// убираем стрелочки
+    }                   ////////    
+}
+
+@media screen and (max-width: 680px){
+    .slider-item__text{
+    margin: 0 40px;
+    width: 90%;
+    padding: 2rem;
+    }
+}

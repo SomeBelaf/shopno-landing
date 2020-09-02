@@ -1,0 +1,44 @@
+.info{
+    background-color: $color_header_bg;
+    &__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+    }
+//////////////////////РАЗПОЛОЖЕНИЕ КРУЖКИ//////////////////////
+    &__bg-cup{
+        margin: -30px 0 0 82%;
+    }
+//////////////////////ОСТУП У КНОПКИ//////////////////////
+}
+//////////////////////НАДПИСЬ////////////////
+.info-title{
+    margin-bottom: 15%;
+    &__text{
+        text-align: center;
+        @include info-font;
+        text-transform: uppercase;
+    }
+    &__text--aqua{
+        background-color: $color_aqua_2;
+        font-size: 4.5rem;
+        padding-right: .3em;
+        padding-left: .3em;
+    }
+}
+
+//////////////////////СТИЛЬ ДЛЯ КРУЖКИ//////////////////////
+.bg-cup{
+    width: 9rem;
+    height: 10.5rem;
+    background: no-repeat center;
+
+}
+
+@media screen and (max-width: 480px){
+    .info__bg-cup{
+        margin: 30px 0 0 82%;
+    }
+}

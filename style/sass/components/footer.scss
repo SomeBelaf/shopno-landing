@@ -1,0 +1,121 @@
+.footer{
+    padding-top: 12rem;
+    background-image: url('/assets/images/footer_bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &__contact-us{
+        flex: 7;
+        background-color: rgba(#021623, .71);
+        padding: 5rem 3rem;
+        max-width: 615px;
+        margin-right: 3.5rem;
+    }
+}
+
+.our-contacts{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12.5rem;
+}
+
+.contact-us{
+    display: flex;
+    flex-direction: column;
+    &__text{
+        @include main-text($color_white);
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid $color_white;
+        height: 4rem;
+        margin-bottom: 3rem;
+        &--big{
+            height: 11rem;
+        }
+        &::placeholder{
+            @include main-text($color_white);
+        }
+    }
+}
+.contact-us__btn{
+    background-color: #6eeee4;
+    border: #6eeee4;
+    color: #2e6b66;
+    &:hover{
+        color: $color_button;
+        border: 2px solid $color_button;
+        background: none;
+    }
+}
+.adress{
+    flex: 5;
+    background-color: rgba(#021623, .71);
+    max-width: 500px;
+    padding: 3rem 3rem 2rem;
+}
+.adress_list-phone{
+    margin-bottom: 3.5rem;
+}
+.adress_list-email{
+    margin-bottom: 2.7rem;
+}
+.list-item{
+    @include main-text($color_white);
+}
+.follow-us{
+    width: 100%;
+    padding: 9rem 0;
+    background-color: $color_footer;
+    text-align: center;
+    &__social{
+        margin: 0 auto;
+        margin-bottom: 4.5rem;
+        display: inline-block;
+        a{
+            cursor: pointer;
+        }
+    }
+    h4{
+        @include main-text(#dfe0e0);
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+    }
+    .social-item{
+        width: 46px;
+        height: 40px;
+        background-color: #424648;
+        margin: 0 4px;
+        float: left;
+        position: relative;
+        &:hover{
+            background-color: $color_aqua;
+        }
+    }
+    p{
+        @include main-text(#969798);
+    }
+}
+.icon-social--footer{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+@media screen and (max-width: 1000px){
+    .our-contacts{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__contact-us{
+        width: 80%;
+        margin-right: 0;
+        margin-bottom: 3.5rem;
+        max-width: 650px;
+    } 
+    .adress{
+        width: 80%;
+        max-width: 650px;
+    }
+}

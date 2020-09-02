@@ -1,0 +1,14 @@
+.sponsors{
+    background-color: $color_white;
+    padding: 11rem 0 12rem 0;
+}
+
+.sponsors__wrapper{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    &--indentation{
+        margin-bottom: 4rem;
+    }
+}

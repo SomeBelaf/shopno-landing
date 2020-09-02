@@ -1,0 +1,100 @@
+.team{
+    padding: 12rem 0 12rem 0;
+    background-color: $color_white;
+    &__title{
+        margin-bottom: 12rem;
+    }
+}
+//////////////////////РАЗМЕРЫ КАРТИНОК//////////////////////
+.item-img{
+    &--tall{
+    position: relative;
+    }
+}
+.team__img{
+    width: 100%;
+    height: auto;
+}
+//////////////////////СТИЛИ ДЛЯ team-info//////////////////////
+.team-info{
+    z-index: 1;
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+    &__social{
+        margin-top: 35px;
+        max-width: 90px;
+    }
+    &::before{
+        content: '';
+        width: 0;
+        height: 0;
+        border-left: 11px solid transparent;
+        border-right: 11px solid transparent;
+        border-bottom: 19px solid $color_aqua;
+        position: relative;
+        left: 20px;
+        top: -15px;
+    }
+}
+.some-text--wrapper{
+    background-color: $color_aqua;
+    padding-left: 10%;
+    padding-top: 12%;
+    width: 335px;
+    height: 240px;
+
+}
+
+////////////////////////////ИКОНКИ СОЦ. СЕТЕЙ//////////////////////////////////////
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.icon-social{
+    cursor: pointer;
+}
+//////////////////////СТИЛИ ДЛЯ ТЕКСТА //////////////////////
+.title--team{
+    @include title($color-text_2, 2.5rem);
+}
+.text--team{
+    @include main-text($color_text_4);
+}
+.title--modified{
+    @include title-italic;
+}
+//////////////////////////////////////////////////////////////////364
+
+.item-img--tall:hover{
+    .team-info{
+        display: block;
+       animation: teamInfo .2s cubic-bezier(0.18, 0.89, 0.32, 1.28) ;
+    }
+}
+    
+@media screen and (max-width: 576px ){
+    .some-text--wrapper{
+       width: 250px;
+       height: 190px
+    }
+    
+    .team-info{
+        top: 45%;
+    }
+}
+
+@media screen and (max-width: 364px ){
+    .team-info{
+        top: 35%;
+    }
+}
+
+@keyframes teamInfo{
+    from{top: 65%};
+    to{top: 40%;}
+}

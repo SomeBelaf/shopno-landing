@@ -1,0 +1,27 @@
+.our-works{
+    padding: 13rem 0 12rem 0;
+    background-color: $color_white;
+    &__title{
+        margin-bottom: 12.5rem;
+    }
+}
+//////////////////////СТИЛИ ДЛЯ КАРТИНОК(ПЛИТИ)//////////////////////
+.some-img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.our-works__img{
+    width: 100%;
+    height: auto;
+}
+.some-img__item{
+    margin: 0 1rem .5rem 0;
+    animation-delay: .3s;
+}   
+//////////////////////////////////////////////////////////////////
+@media screen and (max-width: 790px){
+    .some-img__item{
+        margin:  .5rem 1rem;
+    }
+}
