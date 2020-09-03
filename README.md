@@ -1,9 +1,9 @@
 # shopno-landing
-One page landing,сreated with **HTML**, **SCSS**, **JS**.
+One page landing,сreated with **HTML**, **SCSS**and pure **JS**.
 
 To convert from SCSS to CSS was used **Koala** - http://koala-app.com/
 
 For animations used libraries:
- * **Aanimate.css** - https://animate.style/?
- * **wow.js** - https://wowjs.uk/ 
- * **smooth-scroll** - https://github.com/cferdinandi/smooth-scroll
+ * **Animate.css** - [Link to Animate.css site](https://animate.style/)
+ * **wow.js** - [Link to WoW.js site](https://wowjs.uk/)
+ * **Smooth-Scroll** -[Link to Smooth-Scroll GitHub repository](https://github.com/cferdinandi/smooth-scroll)
