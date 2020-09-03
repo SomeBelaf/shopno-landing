@@ -1,5 +1,5 @@
 # shopno-landing
-One page landing, сreated with **HTML**, **SCSS** and pure **JS**.
+One page landing, сreated with **HTML**, **SCSS** and **JS**.
 
 To convert from SCSS to CSS was used **Koala** - http://koala-app.com/
 
