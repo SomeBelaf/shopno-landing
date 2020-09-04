@@ -1,4 +1,7 @@
 # shopno-landing
+
+###Live Demo - https://someimya.github.io/shopno-landing/
+
 One page landing, сreated with **HTML**, **SCSS** and **JS**.
 
 To convert from SCSS to CSS was used **Koala** - http://koala-app.com/
