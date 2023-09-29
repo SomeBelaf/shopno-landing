@@ -1,6 +1,6 @@
 # shopno-landing
 
-### Live Demo - https://somebelaf.github.io/shopno-landing/
+### Live Demo - https://username4212.github.io/shopno-landing/
 
 One page landing, сreated with **HTML**, **SCSS** and **JS**.
 
